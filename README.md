@@ -4,7 +4,7 @@ One instance must be set to server mode and the second to client mode. Messenges
 AES-128 cipher.
 
 # Usage
-- Switch your instance of the program to client mode
+- Switch your instance of the program to client mode (your partner must have set his instance to the server mode)
 - Type in the IP of your partner in the TextField under "Connection" label
 - Click on the "Connect" button
 - <Optional> select encryption type and choose a key (note that it should match the key of your partner exactly)
