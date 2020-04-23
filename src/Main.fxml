@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainFXMLController">
+   <children>
+      <Pane fx:id="Pane_root" layoutX="1.0" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <TitledPane animated="false" collapsible="false" layoutX="10.0" layoutY="170.0" prefHeight="420.0" prefWidth="780.0" text="Chat">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="TextField_SendInput" layoutX="10.0" layoutY="360.0" prefHeight="25.0" prefWidth="633.0" />
+                        <TextFlow fx:id="TextFlow_History" layoutX="10.0" layoutY="10.0" prefHeight="340.0" prefWidth="760.0" style="-fx-border-color: grey;" />
+                        <Button fx:id="Button_Send" layoutX="656.0" layoutY="360.0" mnemonicParsing="false" onAction="#Button_SendAction" prefHeight="25.0" prefWidth="114.0" text="Send" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+            <TitledPane animated="false" collapsible="false" layoutX="520.0" layoutY="10.0" prefHeight="150.0" prefWidth="270.0" text="Encryption">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <RadioButton fx:id="RadioButton_CipherNone" layoutX="185.0" layoutY="6.0" mnemonicParsing="false" onAction="#RadioButton_CipherNoneAction" text="None" />
+                        <RadioButton fx:id="RadioButton_CipherAES128" layoutX="185.0" layoutY="31.0" mnemonicParsing="false" onAction="#RadioButton_CipherAES128Action" text="AES-128" />
+                        <TextArea fx:id="TextArea_Key" layoutX="4.0" layoutY="4.0" prefHeight="116.0" prefWidth="170.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+            <TitledPane animated="false" collapsible="false" layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="500.0" text="Connection">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="TextField_Connect" layoutX="13.0" layoutY="14.0" prefHeight="25.0" prefWidth="362.0" />
+                        <RadioButton fx:id="RadioButton_ClientMode" layoutX="14.0" layoutY="49.0" mnemonicParsing="false" onAction="#RadioButton_ClientModeAction" text="Client Mode" />
+                        <RadioButton fx:id="RadioButton_ServerMode" layoutX="110.0" layoutY="49.0" mnemonicParsing="false" onAction="#RadioButton_ServerModeAction" text="Server Mode" />
+                        <Button fx:id="Button_Disconnect" layoutX="387.0" layoutY="14.0" mnemonicParsing="false" onAction="#Button_DisconnectAction" prefHeight="25.0" prefWidth="97.0" text="Disconnect" />
+                        <Button fx:id="Button_Connect" layoutX="387.0" layoutY="14.0" mnemonicParsing="false" onAction="#Button_ConnectAction" prefHeight="25.0" prefWidth="97.0" text="Connect" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
