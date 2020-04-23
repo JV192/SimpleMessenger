@@ -3,4 +3,11 @@ This is a simple messenger which uses TCP sockets to communicate between two ins
 One instance must be set to server mode and the second to client mode. Messenges can be encrypted with 
 AES-128 cipher.
 
+# Usage
+- Switch your instance of the program to client mode
+- Type in the IP of your partner in the TextField under "Connection" label
+- Click on the "Connect" button
+- <Optional> select encryption type and choose a key (note that it should match the key of your partner exactly)
+- Once connected, type in your messenges and click on the "Send" button
+
 ![Snapshot of the GUI](/GUI.png)
