@@ -8,6 +8,6 @@ AES-128 cipher.
 - Type in the IP of your partner in the TextField under "Connection" label
 - Click on the "Connect" button
 - (Optional) Select encryption type and choose a key (note that it should match the key of your partner exactly)
-- Once connected, type in your messenges and click on the "Send" button
+- Once connected, type in your messenge and click on the "Send" button
 
 ![Snapshot of the GUI](/GUI.png)
